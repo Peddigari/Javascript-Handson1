@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container" id="resultContainer">
+        <div class="header">
+            <button onclick="window.location.reload();" class="play">Play Again</button>
+            <h2 class="Between">Between (1 and 100)</h2>
+        </div>
+        <div class="parent">
+            <h1>Guess My Number!!
+            <hr>
+            <p id="resText">Start Guessing!!</p>
+            <!-- <div class="resBox"></div> -->
+            <div id="result">?</div>
+            <input class="inputButton" type="text">
+            <button onclick="checkNumber()">check!</button>
+            <label>Chances:<span id="chancesCount"></span></label>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

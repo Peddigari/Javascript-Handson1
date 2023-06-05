@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Handson</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<style>
+    .flexbox{
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    .flexChild{
+        height: 100px;
+        width:100px ;
+        border: 2px solid black;
+        background-color: brown;
+    }
+    .flexvert{
+        display: flex;
+        /* flex-direction: column; */
+        gap: 30px;
+
+    }
+</style>
+<body>
+    <div class="firstContainer">
+    <h1 style="text-align: center;">DOM HANDSON</h1><hr>
+    <p>Q1.Write the code to access element which is having id as "text"</p>
+    <h2 id="text">Hello</h2><hr>
+    <p>Q2.Write the code to access element which is having tag as "h1"</p>
+    <h1>Hey girls</h1><hr>
+    <p>Q3.Write the code to access element which is having class as "box"</p>
+    <div class="box">Hello Duniya</div><hr>
+    <p>Q4.Change the heading from ""Hello"" to ""Hello World"" using DOM functions</p>
+    <h1 class="updateText">Hello</h1><hr>
+    <!-- <h1 class="updateText">Hello</h1> -->
+    <!-- <h1 class="updateText">Hello</h1> -->
+    <p>Q5.Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy"</p>
+    <h1 id="replace">Hello World</h1>
+    <button onclick="replaceText()">replace text</button><hr>
+    <p>Q6.Add one style attribute and give text color as red and id attribute and give the id value as ""heading"" in the above given h1 tag using DOM functions"</p>
+    <h1 id="heading">hello</h1><hr>
+    <p>Q7.Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also create button at the bottom named "Change Flex direction". When user clicks on this button, the cards arrangement should be changed to vertical direction.</p>
+    <div id="parent"></div>
+    <button onclick="changeFlex()">change flex direction</button><hr>
+    <p>Q8.What’s the difference between window vs document?</p>
+    <table cellspacing="0"  border="1px solid black">
+    <thead>
+        <td>Window</td>
+        <td>Document</td>
+    </thead>
+    <tr><td>1. window object is supported by all browsers. It represents the browser's window.</td>
+    <td>1.The document object represents your web page.</td></tr>
+    <tr>
+        <td>2.All global JavaScript objects, functions, and variables automatically become members of the window object.</td>
+        <td>2.The HTML DOM document object is the owner of all other objects in your web page.</td>  
+    </tr>
+    <tr>
+        <td>3.Global variables are properties of the window object.</td>
+        <td>3.If you want to access any element in an HTML page, you always start with accessing the document object.</td>
+    </tr>
+    <tr>
+        <td>4.Global functions are methods of the window object.</td>
+        <td>4.The Document object has various properties that refer to other objects which allow access to and modification of document content. </td>
+    </tr>
+</table><hr>
+<p>Q9.Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second</p>
+    <h1>Display Clock</h1>
+    <div id="clock" onload="showTime()"></div><hr>
+    <p>Q10.Number Guessing Game</p>
+    <a href="./index1.html">Click here</a></div>
+    <script src="./index.js"></script>
+
+
+</body>
+</html>
